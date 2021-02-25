@@ -11,7 +11,7 @@ module.exports = {
     mode: NODE_ENV ? NODE_ENV : 'development',
     entry: path.resolve(__dirname, '../src/server/server.js'),
     output: {
-        path: path.resolve('../dist/server'),
+        path: path.resolve(__dirname, '../dist/server'),
         filename: "server.js"
     },
     externals: [nodeExternals()],
