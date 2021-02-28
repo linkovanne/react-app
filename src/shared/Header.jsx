@@ -1,9 +1,10 @@
 import * as React from 'react';
+import styles from './header.less';
 
-export function Header () {
+export function Header() {
     return (
         <header>
-            <h1>Reddit project</h1>
+            <h1 className={styles.title}>Reddit project</h1>
         </header>
     )
 }
